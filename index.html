@@ -10,7 +10,7 @@
 
         var f = function(o) {
             if(f.caller && f.caller.toString && 
-               f.caller.toString().indexOf('function getCompletions') > 0) {
+               f.caller.toString().indexOf('getCompletions(type)') > 0) {
                 console.log(f.caller)
             }
             return gn(o);
