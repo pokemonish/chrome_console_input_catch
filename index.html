@@ -10,7 +10,7 @@
 
         var f = function(o) {
             if(f.caller && f.caller.toString && 
-               f.caller.toString().indexOf('object&&ArrayBuffer.isView(o)&&o.length>9999') > 0) {
+               f.caller.toString().indexOf('function getCompletions') > 0) {
                 console.log(f.caller)
             }
             return gn(o);
